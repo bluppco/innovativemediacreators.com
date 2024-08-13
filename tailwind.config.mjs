@@ -51,6 +51,7 @@ module.exports = {
 			},
 			fontFamily: {
 
+				"acumin_pro": [ "acumin-pro", "sans-serif" ]
 
 			}
 
