@@ -4,3 +4,9 @@
     src: url('/fonts/Jaapokki-Regular.otf');
 
 }
+@font-face {
+
+    font-family: 'Brutal';
+    src: url('/fonts/Brutal.woff2');
+
+}
