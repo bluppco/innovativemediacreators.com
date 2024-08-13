@@ -51,7 +51,8 @@ module.exports = {
 			},
 			fontFamily: {
 
-				"acumin_pro": [ "acumin-pro", "sans-serif" ]
+				"acumin_pro": [ "acumin-pro", "sans-serif" ],
+				"jaapokki": ["Jaapokki", "sans-serif"],
 
 			}
 
