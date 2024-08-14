@@ -52,6 +52,7 @@ module.exports = {
 				"gray":"#5b5b5b",
 				"light_gray":"#7a7a7a",
 				"wheat":"#dcdab8",
+				"dark_blue":"#0d3a93",
 			},
 			fontFamily: {
 
