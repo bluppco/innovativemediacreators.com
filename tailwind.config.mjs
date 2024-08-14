@@ -47,10 +47,10 @@ module.exports = {
 			},
 			colors: {
 
-				"red-light":"#fe5b49",
-				"light-blue":"#00d3ec",
+				"light_red":"#fe5b49",
+				"light_blue":"#00d3ec",
 				"gray":"#5b5b5b",
-				"light-gray":"#7a7a7a",
+				"light_gray":"#7a7a7a",
 				"wheat":"#dcdab8",
 			},
 			fontFamily: {
