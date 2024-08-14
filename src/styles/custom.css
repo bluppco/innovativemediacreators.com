@@ -10,3 +10,9 @@
     src: url('/fonts/Brutal.woff2');
 
 }
+@font-face {
+
+    font-family: 'Helvetica';
+    src: url('/fonts/Helvetica.ttf');
+
+}
