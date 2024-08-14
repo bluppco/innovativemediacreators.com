@@ -47,7 +47,7 @@ module.exports = {
 			},
 			colors: {
 
-
+				"red-light":"#fe5b49"
 			},
 			fontFamily: {
 
