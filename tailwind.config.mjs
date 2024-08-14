@@ -53,6 +53,7 @@ module.exports = {
 
 				"acumin_pro": [ "acumin-pro", "sans-serif" ],
 				"brutal": [ "Brutal", "sans-serif" ],
+				"helvetica": [ "Helvetica", "sans-serif" ],
 				"jaapokki": [ "Jaapokki", "sans-serif" ],
 
 			}
