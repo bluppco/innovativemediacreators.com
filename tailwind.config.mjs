@@ -49,8 +49,10 @@ module.exports = {
 
 				"light_red":"#fe5b49",
 				"light_blue":"#00d3ec",
-				"gray":"#5b5b5b",
+				"dark_gray":"#5b5b5b",
 				"light_gray":"#7a7a7a",
+				"medium_gray":"#efeeeb",
+				"light_zinc":"#f6f5f1",
 				"wheat":"#dcdab8",
 				"dark_blue":"#0d3a93",
 			},
