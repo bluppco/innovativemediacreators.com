@@ -1,0 +1,110 @@
+---
+
+// IMPORT ASTRO LAYOUTS
+import Container from "@/layouts/container/index.astro"
+
+// IMPORT ASTRO ATOMS
+import Link from "@/atoms/links/index.astro"
+import PictureInternal from "@/atoms/picture/internal/index.astro"
+
+// AWARDS ARRAY
+const awards = [
+
+    {
+        link:"/maps/",
+        source:"/review-1.png",
+        title:"Read our Google reviews"
+    },
+    {
+        source:"award-1.png"
+    },
+    {
+        link:"/profile/innovative-media-creators#highlights",
+        source:"/review-1.png",
+        title:"Read our Clutch reviews"
+    },
+    {
+        source:"award-2.png"
+    },
+    {
+        source:"award-3.png"
+    },
+    {
+        source:"award-4.jpg"
+    },
+    {
+        source:"award-5.jpg"
+    },
+    {
+        source:"award-6.png"
+    },
+
+]
+
+---
+<section class="py-10 bg-light_zinc">
+    <Container>
+        <div class="space-y-10">
+            <div class="flex justify-center">
+                <div class="h-60 aspect-[5/6]">
+                    <PictureInternal
+                        alternative_text,
+                        source ="/review.png"
+                    />
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center">
+                <span class="text-3xl md:text-5xl lg:text-7xl font-medium font-jaapokki tracking-wider text-red-300">reviews</span>
+                <span class="text-3xl md:text-5xl lg:text-7xl font-medium font-jaapokki tracking-wider">and</span>
+                <span class="text-3xl md:text-5xl lg:text-7xl font-medium font-jaapokki tracking-wider text-cyan-400">awards</span>
+            </div>
+            <div class="flex flex-col justify-center gap-10 md:justify-normal md:grid md:grid-cols-4 items-center md:gap-20">
+                {
+
+                    awards.map( ( item , index ) =>{
+
+                        if( index == 0 || index == 2 ){
+
+                            return (
+
+                                    <div class="space-y-3">
+                                        <div class="w-40 aspect-auto">
+                                            <PictureInternal
+                                                alternative_text=""
+                                                source={ item.source } 
+                                            />
+                                        </div>
+                                        <div class="w-40">
+                                            <Link aria_label={ item.title } href={ item.link }>
+                                                <p class="text-center text-lg font-acumin_pro text-red-400 hover:text-cyan-400 leading-8">{ item.title }</p>
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                            )
+
+                        } else {
+
+                            return (
+
+                                    <div>
+                                        <div class="w-40 aspect-auto">
+                                            <PictureInternal
+                                                alternative_text=""
+                                                source={ item.source } 
+                                            />
+                                        </div>
+                                    </div>
+
+
+                            ) 
+
+                        }
+
+                    } )
+
+                }    
+            </div>
+        </div>
+    </Container>
+</section>

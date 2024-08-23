@@ -1,0 +1,25 @@
+---
+
+// IMPORT ASTRO ATOMS
+import ButtonLightBlue from "@/atoms/buttons/light-blue/index.astro"
+import Link from "@/atoms/links/index.astro"
+import ParagraphLarge from "@/atoms/paragraphs/lg/index.astro"
+
+// IMPORT DATA FROM FRONT-MATTER
+import { frontmatter as title } from "@/content/free-website-review-banner/title.md"
+import { frontmatter as button } from "@/content/free-website-review-banner/button.md"
+
+// HARDCODED DATA
+const button_link = button.link
+const button_text = button.title
+const title_text = title.title
+
+---
+<section class="bg-medium_gray py-3">
+    <div class="flex justify-center items-center gap-5">
+        <ParagraphLarge>{ title_text }</ParagraphLarge>
+        <Link aria_label={ button_text } href={ button_link }>
+            <ButtonLightBlue>{ button_text }</ButtonLightBlue>
+        </Link>
+    </div>
+</section>
